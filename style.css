@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom -64vh, left 46vw top 55vh;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  min-width: 325px;
+  border-radius: .75rem;
+  overflow: hidden;
+}
+
+.card__header {
+  height: 140px;
+  background-color:  hsl(185, 75%, 39%);
+  background: url('./images/bg-pattern-card.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__body {
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 145px;
+}
+
+.profile__picture {
+  position: absolute;
+  top: -50px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 96px; /* Need a specific value to work */
+  
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.profile__info {
+  display: flex;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: .5px;
+  margin-bottom: .5rem;
+}
+
+.profile__info h2{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  margin-right: .5rem;
+}
+
+.profile__city {
+  color: hsl(0, 0%, 59%);
+  font-size: .875rem;
+}
+
+.card__footer {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid hsla(227, 10%, 46%, .28);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.info__number {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: .5rem;
+}
+
+.info__description {
+  font-size: .75rem;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 1px;
+}
